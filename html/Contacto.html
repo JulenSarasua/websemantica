@@ -1,0 +1,78 @@
+<!--
+Autor: Julen Sarasua
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+    <meta charset="utf-8">
+    <meta name="description" content="Ejemplo de CSS3">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Smooch+Sans&display=swap" rel="stylesheet">
+
+	<title>Contacto: PLANTARIUM</title>
+
+	<link rel="stylesheet" href="/css/estilos.css">
+	
+</head>
+
+
+<body style= "text-align: center;">
+	
+    <header>~  P L A N T A R I U M  ~</header>
+
+	<nav>
+		<ul>
+			<li><a href="/index.html">Inicio</a></li>
+			<li><a href="Categorías.html">Categorías</a></li>
+			<li><a href="Noticias.html">Noticias</a></li>
+			<li><a href="Contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<section>
+	<main>
+		<form id="form" action="mailto:jsarasua@birth.eus" method="get">
+            <fieldset>
+
+                <legend><h3>¡Suscríbete a nuesto Mailing-List!</h3></legend>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre"  value=""><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" value=""><br>
+					<label for="mail">Correo electrónico:</label><br>
+                    <input type="text" id="mail" name="mail" value=""><br>
+
+                <label for="interes">Elige que tipo de información deseas recibir:</label><br>
+                <select id="int" name="int">
+                    <option value="PROMO">Promociones</option>
+                    <option value="NOT">Noticias</option>
+                    <option value="AMB">Ambas</option>
+                    
+                </select>
+                <br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+    </main>
+
+    <aside>
+		<h1>Redes sociales</h1>
+		<h3><a href="https://twitter.com/?lang=es"><img class="logos aumentar " src="/img/Logo_Twitter.png"></a></h3>
+        <h3><a href="https://www.facebook.com/"><img class="logos aumentar" src="/img/facebook.jpg"></a></h3>
+        <h3 ><a href="https://www.instagram.com/"><img class="logos aumentar" src="/img/Instagram_icon.png"></a></h3>
+        <h3 ><a href="https://www.tiktok.com/"><img class="logos aumentar" src="/img/tiktok.png"></a></h3>
+    </aside>
+
+    </section>
+
+    <footer>
+        <p class="centrar">Todas las imagenes son utilizadas con fines educativos y conservan todos los derechos de autor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ©Julen Sarasua Rodriguez &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <span class="cursiva"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo: j.sarasua@birth.eus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tlf: 600842971</span></p>
+    </footer>
+
+</body>
+</html>

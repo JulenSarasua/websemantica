@@ -1,0 +1,255 @@
+/*
+Autor: Julen Sarasua
+Asignatura: LMGSI
+Unidad: UD 2
+Tarea: Tarea evaluativa 2 - Sitio Web
+
+Para esta tarea he decidido usar una sóla página de estilo ya que al no haber una grn cantidad y variación en las distintas páginas de la web, tenerlo todo en un documento
+nos facilita el poder cambiar la web entera haciendo un solo cambio, manteniendo así estilo homogeneo y estéticamente atractivo, asi como la oportunidad de practicar con la herencia
+de los atributos.
+Para organizar mejor la página de estilo, esta se divide en dos grandes bloques, primero iran las modificaciones de Selectores de Elementos y después  los Selectores de Clases.
+Se ha evitado el uso de Selectores de ID para esta tarea.
+*/
+
+
+/*--------------------------------------------------------------------ELEMENTOS--------------------------------------------------------------------*/
+
+body {
+    background-image: url(/img/fondo.jpg);
+    background-size: cover; /* para cubrir toda la pantalla */
+    background-position: center; /* para centrar la imagen */
+    background-repeat: repeat; /*para que se repita la imagen*/
+    margin: 0;
+    text-align: center;
+}
+
+/*Header y nav footer*/
+
+header, nav {
+    background-color: rgb(248, 238, 206);
+}
+
+header {
+    box-sizing: border-box; 
+    color: black;
+    width: 100%;
+    line-height: 100%;
+    font-size: 400%;
+    padding-top: 1.5%;
+    font-family: Permanent Marker;
+    font-weight: bold;  
+}
+
+@media (max-width: 50em) { /* Método nuevo no visto en la unidad, hemos empleado chat GTP para que nos proponga una manera de hacer que el tamaño sea más pequeño para pantallas más pequeñas */
+    header {
+            font-size: 250%; 
+        }
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1%;/* Espaciado interno en la barra de navegación */
+    text-align: center;
+    font-size: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 0.3em  5em;
+    transition: transform 0.3s; /* Agregamos una transición para un cambio suave */
+    border-color: rgb(129, 255, 171);
+    background-color: rgba(15, 228, 164, 0.3);
+    border-radius: 0.5em;
+    padding: 0.3em 0.6em 0.3em 0.6em;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li:hover {
+    border-bottom: 0.01em  solid #000000; /* Añadimos un subrayado al pasar el ratón por encima */
+    transform: scale(2); /* Hacemos crecer el elemento al pasar el ratón por encima */
+}
+
+footer {
+    background: #333;
+    color: aliceblue;
+    padding: 0.5%;
+    font-size: 1.1em; 
+}
+
+
+
+/*Elementos dentro de la seccion: Main, aside, h, article e img*/
+
+section {
+    display: flex;
+	flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main, aside {
+    margin: 1%;
+    padding: 1%;
+    background-color:rgb(248, 238, 206,0.9);
+    border: 0.6em solid rgb(245, 222, 145);
+}
+
+main {
+    flex-basis: 70%;
+    font-size: 1.5em;
+}
+
+aside {
+    flex-basis: 30%;
+    font-size: 1.2em;
+}
+
+article {
+    flex-basis: 33%;
+    padding: 2%;   
+}
+
+h1 {
+    border-bottom: 0.01em solid #000000; 
+    margin: 1%;
+    font-size: 2em;
+}
+
+h2 {
+    margin: 2% ;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    border-radius: 100%;
+    float: left;
+    margin: 5%;
+}
+
+h2 img {
+    margin:auto;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    width: 20%;
+}
+
+h2 a {
+    color:  rgb(245, 222, 145);
+}
+
+article a{
+    text-decoration: none;
+}
+
+article h2{
+    font-size: 2.3em;
+}
+
+p {
+    text-align: justify;
+}
+
+/*Formulario*/
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6em;
+}
+
+fieldset{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+input, select, article{
+    font-size: 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+    border-color: rgb(129, 255, 171);
+    background-color: rgba(15, 228, 164, 0.3);
+    padding: 0.3em 0.6em 0.3em 0.6em;
+}
+
+/*--------------------------------------------------------------------CLASES--------------------------------------------------------------------*/
+
+.aumentar {
+    transition: transform 0.3s; /* Elemento innovador Agregamos una transición para un cambio suave */
+}
+
+.aumentar:hover {
+    transform: scale(2); /* Hacemos crecer el elemento al pasar el ratón por encima */
+}
+
+.noAside {
+    flex-basis: 100%; /* Empleada en la páginas que no tienes aside para que el main ocupe la totalidad*/
+}
+
+.flex {
+    display: flex;
+	flex-direction: row;
+}
+
+.fondoImagen {
+    padding: 10%; /*Controla las imágenes de la página de Categorías*/
+    border-radius: 1000%;
+    text-shadow: 0.1em 0.1em 0.1em  #000000; 
+    font-size: 2em;
+}
+
+.imagen1 {
+    background-image: url(/img/medicinales.jpg);
+}
+
+.imagen2 {
+    background-image: url(/img/culinarias.jpg);
+}
+
+.imagen3 {
+    background-image: url(/img/decorativas.jpg);
+}
+
+.articleCategoria {
+    background-color:rgb(248, 238, 206, 0) ; /*Para que coincida  con el color del fondo de main*/
+}
+
+.subrayar:hover {
+    border-bottom: 0.01em  solid #000000; /* Añadimos un subrayado al pasar el ratón por encima */  
+}
+
+.cursiva {
+    font-style: oblique;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.logos{
+    transform: scale(0.8); /* Para controlar el tamaño de ciertas imágenes*/
+}
+
+.footerAbajo{
+    position: fixed; /*footer siempre abajo*/
+    bottom: 0;
+    width: 100%; 
+}
+
+.footerPegajoso{
+    position: sticky; /*Al minimizar la pantalla el footer se queda abajo*/
+    bottom: 0;
+}
