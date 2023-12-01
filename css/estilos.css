@@ -15,7 +15,7 @@ Se ha evitado el uso de Selectores de ID para esta tarea.
 /*--------------------------------------------------------------------ELEMENTOS--------------------------------------------------------------------*/
 
 body {
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: cover; /* para cubrir toda la pantalla */
     background-position: center; /* para centrar la imagen */
     background-repeat: repeat; /*para que se repita la imagen*/
@@ -212,15 +212,15 @@ input, select, article{
 }
 
 .imagen1 {
-    background-image: url(/img/medicinales.jpg);
+    background-image: url(../img/medicinales.jpg);
 }
 
 .imagen2 {
-    background-image: url(/img/culinarias.jpg);
+    background-image: url(../img/culinarias.jpg);
 }
 
 .imagen3 {
-    background-image: url(/img/decorativas.jpg);
+    background-image: url(../img/decorativas.jpg);
 }
 
 .articleCategoria {
